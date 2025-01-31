@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="© Max Mustermann, 2024">
+    <link rel="stylesheet" href="style.css"><!-- Verlinkung zur CSS-Datei -->
+    <title>Startseite</title>
+    <script>
+        // Verhindert das Rechtsklicken
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            alert('Rechtsklick ist deaktiviert!');
+        });
+
+        // Verhindert das Kopieren von Text
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+            alert('Kopieren ist deaktiviert!');
+        });
+
+        // Verhindert das Markieren von Text
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</head>
+<body>
+
+    <h1>Das ist die Startseite</h1>
+    <hr>
+
+    <b>Herzlich Willkommen auf meiner Webseite.<br>
+    Hier finden Sie eine kleine Auflistung und Navigation für die Webseite.</b>
+
+    <p><u><h3>Zum Erlernen von HTML benötigen Sie</h3></u></p>
+
+    <h4>Übersicht Startseite</h4>
+    <ul>
+        <li>Texteditor</li>
+        <li>Webbrowser</li>
+        <li>HTML-Handbuch</li>
+        <li>PC oder Notebook</li>
+        <li>Zeit und Lust</li>    
+    </ul>
+
+    <h2>Übersicht Indexhtml</h2>
+    
+        <a href="kontakt.html">Kontakt</a>
+        <a href="Meinewebseite.html"">Email</a>
+        <a href="indexbuch.html">Telefon</a>
+    
+
+    <h3>Text-Align Optionen</h3>
+    <div>
+        <label><input type="radio" name="align" checked="checked"> Links</label>
+        <label><input type="radio" name="align"> Zentrum</label>
+        <label><input type="radio" name="align"> Rechts</label>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Meine Webseite</p>
+    </footer>
+</body>
+</html>
